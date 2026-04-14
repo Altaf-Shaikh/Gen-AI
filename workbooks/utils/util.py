@@ -27,8 +27,9 @@ def get_llm(llm_name:str):
         case _:
             raise ValueError(f"Unsupported LLM: {llm_name}")
         
-def message_updater(messages:list, role: str):
+def message_updater(messages:list, role: str, system_prompt: str):
     system_message = messages[0]
+    system_message['content']= system_prompt
     rest_messages = messages[1:]
     for i in range(0, len(rest_messages), 2):
         rest_messages[i]["role"] = role
