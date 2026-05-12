@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "RAG Evaluator",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/workbooks/Advanced/evaluation/RAG-evaluator.py",
+            "python": "${workspaceFolder}/.venv/bin/python3",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Ingest",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/workbooks/Advanced/evaluation/implementation/ingest.py",
+            "python": "${workspaceFolder}/.venv/bin/python3",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
